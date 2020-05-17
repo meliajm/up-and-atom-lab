@@ -1,4 +1,4 @@
-class AtomsController < ApplicationController
+class Api::V1::AtomsController < ApplicationController
   before_action :set_atom, only: [:show, :update, :destroy]
 
   # GET /atoms
@@ -18,7 +18,7 @@ class AtomsController < ApplicationController
     @atom = Atom.new(atom_params)
 
     if @atom.save
-      render json: @atom, status: :created, location: @atom
+      render json: @atom, status: :created
     else
       render json: @atom.errors, status: :unprocessable_entity
     end
