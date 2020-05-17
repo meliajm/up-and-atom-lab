@@ -23,4 +23,7 @@ rails g scaffold Question content:text page:string
 rails db:migrate
 
 routes
+model validations
+controllers and namespacing
+heroku run rake db:migrate
 
