@@ -27,3 +27,7 @@ model validations
 controllers and namespacing
 heroku run rake db:migrate
 
+heroku ps:scale web=1
+
+heroku run rails console
+
