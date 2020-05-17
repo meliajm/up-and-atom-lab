@@ -9,7 +9,7 @@ git push -u origin master
 gem 'bcrypt', '~> 3.1.7'
 gem 'pg', '>= 0.18', '< 2.0'
 
-could add pry
+add pry
 
 add notes file
 touch notes.md
