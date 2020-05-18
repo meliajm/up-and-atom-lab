@@ -23,8 +23,8 @@ class Api::V1::SessionsController < ApplicationController
     end
 
     def get_current_user
-        binding.pry
         if logged_in?
+            binding.pry
             render json: {
                 current_user: current_user,
                 logged_in: true
